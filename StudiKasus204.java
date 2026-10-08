@@ -10,7 +10,7 @@ public class StudiKasus204 {
         System.out.print("Masukkan nama mahasiswa : ");
         nameMahasiswa = sc.nextLine();
 
-        System.out.print("Masukkan jenis kegiatan (BELMAWA/BAKORMA/MANDIRI/PKM/LAINNYA): ");
+        System.out.print("Masukkan jenis kegiatan (BELMAWA/BAKORMA/Mandiri/PKM/Lainnya): ");
         jenisKeg = sc.nextLine();
 
         if (jenisKeg.equalsIgnoreCase("BELMAWA") || jenisKeg.equalsIgnoreCase("BAKORMA") || jenisKeg.equalsIgnoreCase("MANDIRI")) {
