@@ -13,6 +13,23 @@ public class StudiKasus204 {
         System.out.print("Masukkan jenis kegiatan (BELMAWA/BAKORMA/MANDIRI/PKM/LAINNYA): ");
         jenisKeg = sc.nextLine();
 
-        
+        if (jenisKeg.equalsIgnoreCase("BELMAWA") || jenisKeg.equalsIgnoreCase("BAKORMA") || jenisKeg.equalsIgnoreCase("MANDIRI")) {
+            System.out.print("jumlah dokumen : ");
+            jumlahDok = sc.nextInt();
+
+            System.out.print("peringkat juara : ");
+            peringkatJua = sc.nextInt();
+
+            if (jumlahDok < 4) {
+                kurangDok = 4 - jumlahDok;
+
+                System.out.println("Status : Dokumen tidak lengkap (kurang " + kurangDok + " dokumen). Dana penghargaan tidak diberikan.");
+            else {
+                if (peringkatJua >= 1 && peringkatJua <= 3) {
+                    System.out.println("Status : Dana penghargaan diberikan.");
+                } else {
+                    System.out.println("Status : Peringkat juara tidak memenuhi syarat. Dana penghargaan tidak diberikan.");
+                }
+
     }
 }
